@@ -1,8 +1,138 @@
 @import "vars"
-@import "fonts"
 
+//start global style
+body
+    font-family: $main-font
+    font-size: 20px
+    color: $main-color
+    margin: 0
+    padding: 0
+    font-weight: 400
+    box-sizing: border-box
+.container
+    width: 1260px
+    max-width: 87.050vw
+    margin-left: auto
+    margin-right: auto
+ul 
+    padding: 0
+    margin: 0
+    list-style: none
+.h1 
+    color: #000
+    font-size: 70px 
+    font-weight: 700
+    line-height: 1.13
+    margin-bottom: 25px
+    margin-top: 0
+p 
+    margin-top: 0
+    margin-bottom: 0
+//end global style
 
+//start header style
+.header
+    padding-top: 11px
+    .container 
+        display: flex
+        justify-content: space-between
+        align-items: center
+.menu 
+    ul 
+        display: flex 
+        align-items: center
+.menu__link 
+    text-decoration: none
+    color: $main-color
+.menu__item
+    margin-left: 85px
+//end header style
 
+//start main-screen style
+.main-screen
+    background: url('../img/main-screen.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center right
+    p 
+        line-height: 135%
+.main-screen__content
+    padding: 260px 0 
+    .container 
+        display: flex 
+        justify-content: flex-end
+.main-screen__content-wrapper
+    width: 609px
+    max-width: 100%
+//end main-screen style
+
+//start borrowers section
+.borrowers
+    background: #EFF6FD
+    padding-top: 100px 
+    padding-bottom: 65px
+    .container 
+        display: flex 
+        justify-content: space-between
+.borrowers__img
+    position: relative
+    width: 50%
+    display: flex 
+    justify-content: flex-end
+    padding-right: 62px
+    box-sizing: border-box
+    img 
+        max-width: 100%
+        object-fit: cover 
+        object-position: center
+.borrowers__content
+    font-size: 25px
+    width: 50%
+    padding-right: 10px
+    p 
+        margin-bottom: 19px
+        a 
+            color: #1764AA
+            text-decoration: none
+.rectangles
+    position: absolute
+    top: 0-28px
+    right: 0  
+    height: 131px
+.button 
+    display: flex 
+    justify-content: center
+    align-items: center
+    width: 221px 
+    height: 60px
+    background: #53A1E8
+    color: #fff
+    text-decoration: none
+    border-radius: 10px
+    margin-top: 57px
+    font-size: 22px
+    font-weight: 500
+//end borrowers section
+
+//start contact style
+.contact 
+    padding-top: 108px 
+    background: url('../img/contact.png') bottom left no-repeat, #1764AA
+    color: #fff
+    padding-bottom: 178px
+    .container
+        display: flex 
+        justify-content: space-between
+.contact__title  
+    font-size: 70px 
+    font-weight: 700
+    line-height: 1.13
+    margin-bottom: 55px
+    margin-top: 0
+.contact__content,
+.contact__form 
+    width: 50%
+//end contact style
 
 @import "media"
 
